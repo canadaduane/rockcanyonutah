@@ -5,6 +5,25 @@
     <link rel="canonical" href="hello-world.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>
+/* Pure Menu Custom Colors */
+.pure-menu-active>.pure-menu-link,.pure-menu-link:focus,.pure-menu-link:hover{
+    /*background-color: #a9a195 !important;*/
+    background-color: #dbd7d2 !important;
+    color: #000 !important;
+}
+.pure-menu-link {
+    /*color: #a9a195 !important;*/
+    color: #564f44 !important;
+    margin-right: 1em;
+}
+.pure-menu-link:before {
+    content: "⟡";
+    color: #de581e;
+    /*border-left: 3px solid #de581e;*/
+    /*border-radius: 5px;*/
+    padding-right: 8px;
+}
+
 body {
     /*background-color: #f6ecd3;*/
     /*background-color: #ceb59f;*/
@@ -13,6 +32,7 @@ body {
     background-color: #fefefe;
     /*background-color: #0663fc;*/
 }
+
 .content {
     margin: 0 auto;
     padding: 0 2em;
@@ -24,7 +44,7 @@ body {
         text-decoration: none;
         border: 1px solid #564f44;
         border-radius: 15px;
-        background-color: #efefef;
+        background-color: #dbd7d2;
         color: #564f44;
         padding: 0.4em 0.8em 0.3em 0.8em;
         margin-left: 0.5em;
@@ -42,9 +62,6 @@ body {
         font-size: 1.2em;
         color: #de581e;
         text-align: left;
-    }
-    .content .pure-menu-link {
-        margin-right: 1em;
     }
     .content img.inset-left {
         float: left;
@@ -269,9 +286,8 @@ body {
                 </div>                    
             </div>
             <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-2-5"></div>
-                <div class="pure-u-1 pure-u-md-3-5">
-                    <h2>What activ­i­ties do peo­ple enjoy in Rock Canyon?</h2>
+                <div class="pure-u-1">
+                    <h1>What activ­i­ties do peo­ple enjoy in Rock Canyon?</h1>
                 </div>
             </div>
             <div class="pure-g">
@@ -350,8 +366,8 @@ body {
                     </p>
                     <p style="text-align: center;">
                         <a href="#" class="button">Subscribe to the Newsletter</a>
-                        <br><span style="line-height: 2.5em;">or</span>
-                        <br><a href="#" class="button">Donate</a>
+                        <span style="line-height: 2.5em;">or</span>
+                        <a href="#" class="button">Donate</a>
                     </p>
                 </div>                    
             </div>
