@@ -20,10 +20,19 @@ body {
     margin-bottom: 50px;
     line-height: 1.6em;
 }
+    .content a.button {
+        text-decoration: none;
+        border: 1px solid #564f44;
+        border-radius: 15px;
+        background-color: #efefef;
+        color: #564f44;
+        padding: 0.4em 0.8em 0.3em 0.8em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
     .content h1 {
         font-weight: 300;
         font-size: 1.5em;
-        /*color: #333;*/
         color: #de581e;
         text-align: center;
     }
@@ -43,8 +52,6 @@ body {
     height: 400px;
 }
 .header {
-    /*background-color: #333;*/
-    /*background-color: #85969e;*/
     background-color: #7cbee8;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
@@ -73,14 +80,12 @@ body {
     flex: 1 auto;
  }
     .title h1 {
-        font-weight: 300;
         font-size: 3em;
         color: #fff;
         margin: 0.2em 0;
         display: inline;
     }
     .title h2 {
-        font-weight: 300;
         font-size: 1.2em;
         color: #333;
         padding: 0;
@@ -130,7 +135,7 @@ body {
 .footer {
     background-color: #7cbee8;
     color: #333;
-    padding: 1em 0em 5em 0em;
+    padding: 1.5em 0em 5em 0em;
     text-align: center;
     font-weight: 300;
     color: white;
@@ -139,6 +144,9 @@ body {
         font-weight: 300;
         text-decoration: none;
         color: white;
+    }
+    .footer a:hover {
+        text-decoration: underline;
     }
     .footer .dot {
         padding: 0 0.5em;
@@ -182,6 +190,9 @@ body {
     .tinybreak {
         display: block;
     }
+    .footer .pure-u-1 {
+        padding: 0.2em 0.5em;
+    }
 }
     </style>
     <link rel="stylesheet" href="css/pure/pure-min.css">
@@ -214,7 +225,7 @@ body {
         <div class="donate-button-row">
             <input type="image" src="images/donate-button.svg" name="donate-button" id="donate-button" />
             <div class="donate-message">
-                <span class="donate-message-badge">Rock Canyon<span class="tinybreak"> </span>Preservation Alliance</span>
+                <span class="donate-message-badge">Rock Canyon Preservation Alliance</span>
             </div>
         </div>
 
@@ -257,13 +268,18 @@ body {
                     <div class="pure-g">
                         <div class="pure-u-1"><a href="#" class="pure-menu-link">About</a></div>
                         <div class="pure-u-1"><a href="#" class="pure-menu-link">Current Issues</a></div>
-                        <div class="pure-u-1"><a href="#" class="pure-menu-link">Donations</a></div>
+                        <div class="pure-u-1"><a href="#" class="pure-menu-link">Donate</a></div>
                         <div class="pure-u-1"><a href="#" class="pure-menu-link">Newsletter</a></div>
                     </div>
                 </div>
                 <div class="pure-u-1 pure-u-md-3-5">
                     <p>
                         The Rock Canyon Preser­va­tion Alliance is a cit­i­zen group ded­i­cated to pre­serv­ing Rock Canyon, adja­cent to Provo, Utah, for present and future generations.
+                    </p>
+                    <p style="text-align: center;">
+                        <a href="#" class="button">Donate</a>
+                        <br><span style="line-height: 2.5em;">or</span>
+                        <br><a href="#" class="button">Subscribe to the Newsletter</a>
                     </p>
                 </div>                    
             </div>
