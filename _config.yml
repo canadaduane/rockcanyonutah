@@ -7,6 +7,9 @@ url: "https://canadaduane.github.io"
 
 gacode: "UA-85522875-1"
 
+source: "."
+destination: "_site"
+
 exclude:
   - README.md
   - Gemfile
@@ -14,22 +17,6 @@ exclude:
 
 include:
   - install.sh
-
-navigation:
- - text: Home
-   url: /
- - text: Directions
-   url: /#link-directions
- - text: Canyon Hikes &amp; Maps
-   url: /maps.html
- - text: Climbing Corner
-   url: /climbing.html
- - text: Identify Canyon Nature
-   url: /nature.html
- - text: Geology
-   url: /geology.html
- - text: Canyon History
-   url: /history.html
 
 # Build settings
 markdown: kramdown
@@ -44,3 +31,20 @@ kramdown:
     block:
       line_numbers: false
       start_line: 1
+
+# Navigation for menu links
+navigation:
+ - text: Home
+   url: /
+ - text: Directions
+   url: /#link-directions
+ - text: Canyon Hikes &amp; Maps
+   url: /maps/
+ - text: Climbing Corner
+   url: /climbing/
+ - text: Identify Canyon Nature
+   url: /nature/
+ - text: Geology
+   url: /geology/
+ - text: Canyon History
+   url: /history/
