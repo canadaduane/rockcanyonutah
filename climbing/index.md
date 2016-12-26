@@ -4,17 +4,11 @@ layout: default
 
 # Climbing Corner
 
-This is a bunch of information. Wow, information.
-
-[Link to Wikipedia](http://wikipedia.com)
-
-## Subtitle
-
 <div class="pure-g">
-	<div class="pure-u-1-2">
-		Some more stuff
-	</div>
-	<div class="pure-u-1-2">
-		Some more stuff
-	</div>
+    {% include menu.html %}
+    <div class="pure-u-1 pure-u-md-3-5">
+        <p>
+	        Climbers come from all over the state to challenge themselves on the canyon's more than 17 climbing routes.
+        </p>
+    </div>
 </div>
