@@ -1,389 +1,106 @@
-<!doctype html>
-<html ⚡>
-  <head>
-    <meta charset="utf-8">
-    <link rel="canonical" href="hello-world.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>
-/* Pure Menu Custom Colors */
-.pure-menu-active>.pure-menu-link,.pure-menu-link:focus,.pure-menu-link:hover{
-    /*background-color: #a9a195 !important;*/
-    background-color: #dbd7d2 !important;
-    color: #000 !important;
-}
-.pure-menu-link {
-    /*color: #a9a195 !important;*/
-    color: #564f44 !important;
-    margin-right: 1em;
-}
-.pure-menu-link:before {
-    content: "⟡";
-    color: #de581e;
-    /*border-left: 3px solid #de581e;*/
-    /*border-radius: 5px;*/
-    padding-right: 8px;
-}
-
-body {
-    /*background-color: #f6ecd3;*/
-    /*background-color: #ceb59f;*/
-    /*background-color: #c2a270;*/
-    /*background-color: #85969e;*/
-    background-color: #fefefe;
-    /*background-color: #0663fc;*/
-}
-
-.content {
-    margin: 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
-    margin-bottom: 50px;
-    line-height: 1.6em;
-}
-    .content a.button {
-        text-decoration: none;
-        border: 1px solid #564f44;
-        border-radius: 15px;
-        background-color: #dbd7d2;
-        color: #564f44;
-        padding: 0.4em 0.8em 0.3em 0.8em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        line-height: 2.5em
-    }
-    .content h1 {
-        font-weight: 300;
-        font-size: 1.5em;
-        color: #de581e;
-        text-align: center;
-        margin-top: 1em;
-    }
-    .content h2 {
-        font-weight: 300;
-        font-size: 1.2em;
-        color: #de581e;
-        text-align: left;
-    }
-    .content img.inset-left {
-        float: left;
-        margin: 0 0.85em 0.5em 0;
-    }
-    .content .figure-frame {
-        margin: 0 0.7em;
-    }
-    .content .figure-label {
-        text-align: center;
-        font-weight: bold;
-        margin: 0 1em 1em 1em;
-    }
-
-.header-wrapper {
-    padding: 2em 0 0 0;
-    background: url(src/rc_background1.jpg) no-repeat center;
-    height: 400px;
-}
-.header {
-    background-color: #7cbee8;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    display: flex;
-    justify-content: center;
-}
-.logo {
-    padding: 0.4em 0 0;
-    height: 110px;
-}
-.logo-img {
-    position: relative;
-    margin-top: -48px;
-    margin-bottom: -35px;
-
-    width: 150px;
-    height: 150px;
-}
-
-.title {
-    margin: 0;
-    color: #white;
-    padding: 1.4em 0 0 0;
-    text-align: center;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    flex: 1 auto;
- }
-    .title h1 {
-        font-size: 3em;
-        color: #fff;
-        margin: 0.2em 0;
-        display: inline;
-    }
-    .title h2 {
-        font-size: 1.2em;
-        color: #333;
-        padding: 0;
-        margin: 0 0 0.2em 6.5em;
-    }
-    .title-left {
-        text-align: right;
-        flex: 2 1;
-        margin-right: 1em;
-    }
-    .title-right {
-        text-align: left;
-        flex: 2 1;
-        margin-left: 1em;
-    }
-    .title-center {
-        text-align: center;
-        flex: 0 1 0;
-    }
-
-.donate-button-row {
-    position: relative;
-    margin-top: -10em;
-    margin-bottom: 4em;
-    text-align: center;
-}
-#donate-button {
-    width: 322px;
-    height: 87px;
-}
-.donate-message {
-    text-align: center;
-}
-.donate-message-badge {
-    color: #efefef;
-    background-color: #564f44;
-    border-radius: 4px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    padding: 0.35em 0.8em 0.3em 0.8em;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer {
-    padding: 1.5em 0em 5em 0em;
-    text-align: center;
-    font-weight: 300;
-    background-color: #564f44;
-    color: white;
-}
-    .footer a {
-        font-weight: 300;
-        text-decoration: none;
-        color: white;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-    .footer .dot {
-        padding: 0 0.5em;
-    }
-
-@media not screen and (min-width: 48em) {
-    .header-wrapper {
-        /*background: url(src/rc_background1.jpg) no-repeat;*/
-        background-position-y: -250px;
-    }
-    .header {
-        margin-top: 0;
-        flex-wrap: wrap;
-    }
-    .title {
-         padding: 0.4em 0 0 0;
-         flex: 0 1 100%;
-    }
-    .title h1 {
-        font-size: 2em;
-    }
-    .title h2 {
-        margin: 0 0 0.2em 0em;
-    }
-    .title-left {
-        text-align: center;
-        margin: 0 0 2.8em 0;
-    }
-    .title-right {
-        text-align: center;
-        margin: 2em 0 0.5em 0;
-    }
-    .logo-img {
-        width: 100px;
-        height: 100px;
-    }
-    .donate-button-row {
-        margin-top: -9em;
-        margin-bottom: 2em;
-    }
-    .tinybreak {
-        display: block;
-    }
-    .footer .pure-u-1 {
-        padding: 0.2em 0.5em;
-    }
-}
-    </style>
-    <link rel="stylesheet" href="css/pure/pure-min.css">
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/pure/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
-    <!--<![endif]-->
-
-  </head>
-  <body>
-
-<div id="layout">
-    <div id="main">
-        <div class="header-wrapper">
-            <div class="header">
-                <div class="title title-left">
-                    <h1>Rock</h1>
-                </div>
-                <div class="title title-center">
-                    <img src="images/rc_logo_round.png" class="logo-img">
-                </div>
-                <div class="title title-right">
-                    <h1>Canyon</h1>
-                    <h2>Provo, Utah</h2>
-               </div>
-            </div>
-        </div>
-        <div class="donate-button-row">
-            <input type="image" src="images/donate-button.svg" name="donate-button" id="donate-button" />
-            <div class="donate-message">
-                <span class="donate-message-badge">Rock Canyon Preservation Alliance</span>
-            </div>
-        </div>
-
-        <!-- About Rock Canyon -->
-        <div class="content">
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <h1>About Rock Canyon</h1>
-                </div>                    
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-2-5">
-                    <div class="pure-g">
-                    <div class="pure-u-1"><a href="#link-directions" class="pure-menu-link">Directions</a></div>
-                    <div class="pure-u-1"><a href="#" class="pure-menu-link">Canyon Hikes &amp; Maps</a></div>
-                    <div class="pure-u-1"><a href="#" class="pure-menu-link">Climbing Corner</a></div>
-                    <div class="pure-u-1"><a href="#" class="pure-menu-link">Identify Canyon Nature</a></div>
-                    <div class="pure-u-1"><a href="#" class="pure-menu-link">Geology</a></div>
-                    <div class="pure-u-1"><a href="#" class="pure-menu-link">Canyon History</a></div>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-3-5">
-                    <p>
-                        Rock Canyon, adja­cent to Provo, Utah, draws thou­sands of peo­ple annu­ally who seek recre­ation, renewal, and inspi­ra­tion. It is one of the few remain­ing “URBAN FORESTS” in the United States which is eas­ily acces­si­ble and free for pub­lic use.
-                    </p>
-                    <p>
-                        Vis­i­tors from all over the world are inspired by its MAJESTIC BEAUTY and UNIQUE GEOLOGICAL FEATURES.
-                    </p>
-                </div>                    
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <h1>What activ­i­ties do peo­ple enjoy in Rock Canyon?</h1>
-                </div>
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-2-5">
-                    <div class="figure-frame">
-                        <img src="images/hiking1.jpg" width="100%">
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-3-5">
-                    <h2>Recreation</h2>
-                    Hik­ing * Climb­ing * Moun­tain Bik­ing * Base Jump­ing * Pic­nick­ing * Snow-shoeing * Cross Coun­try Ski­ing * Sled­ding * Cou­ples’ Dates * Dog Walk­ing * Snow Board­ing * Horse­back Rid­ing * Rap­pelling * Ath­letic Train­ing * Spelunking
-
-                    <h2>Education</h2>
-                    Bird Watch­ing * Col­lege Field­trips in Geol­ogy, Art, Botany, Biol­ogy, Recre­ation Man­age­ment * Wilder­ness Train­ing Pro­grams * Insect Col­lect­ing * Study of Big Horn Sheep Pop­u­la­tions * Geo­log­i­cal Stud­ies * Wildlife Resource Man­age­ment Classes * Wild­flower Iden­ti­fi­ca­tion * Research Projects in the Nat­ural Sci­ences
-
-                    <h2>Community</h2>
-                    Fam­ily Walks * Preschool Out­ings * Ele­men­tary School Field Trips * Utah Native Plant Soci­ety Gar­den * Search &amp; Res­cue Train­ing
-                </div>                    
-            </div>
-
-            <!-- Directions -->
-            <div class="pure-g" id="link-directions">
-                <div class="pure-u-1">
-                    <h1>Directions to Rock Canyon</h1>
-                </div>                    
-            </div>
-
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <div class="figure-frame">
-                        <a href="https://www.google.com/maps/@40.264558,-111.6311801,344m/data=!3m1!1e3">
-                            <img src="images/map-parking-lot.jpg" width="100%">
-                        </a>
-                    </div>
-                    <div class="figure-label">Map 1: Trail Head Parking Lot</div>
-                </div>                    
-            </div>
-
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="figure-frame">
-                        <a href="https://www.google.com/maps?f=d&source=embed&saddr=Exit+269&daddr=Rock+Canyon,+Provo,+UT&hl=en&geocode=FZGEZgIdQ1dX-Q;FTJuZgIdYn9Y-SmjxPq08pBNhzGQSZn3KDBA0Q&mra=dme&mrcr=0&mrsp=0&sz=14&sll=40.291966,-111.706839&sspn=0.062064,0.049696&ie=UTF8&dirflg=d&t=h&ll=40.268,-111.672935&spn=0.091688,0.145912&z=12">
-                            <img src="images/map-sb-i15.jpg" width="100%">
-                        </a>
-                    </div>
-                    <div class="figure-label">Map 2: Southbound on I-15 to Rock Canyon</div>
-                </div>                    
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <div class="figure-frame">
-                        <a href="https://www.google.com/maps/dir/40.206698,-111.657552/Rock+Canyon,+Provo,+UT/@40.2370656,-111.6794874,11001m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x874d90f2b4fac4a3:0xd1403028f7994990!2m2!1d-111.6407335!2d40.2673136?hl=en">
-                            <img src="images/map-nb-i15.jpg" width="100%">
-                        </a>
-                    </div>
-                    <div class="figure-label">Map 3: Northbound on I-15 to Rock Canyon</div>
-                </div>                    
-            </div>
-
-            <!-- Rock Canyon Preservation Alliance -->
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <h1>Rock Canyon<span class="tinybreak"> </span>Preservation Alliance</h1>
-                </div>                    
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-2-5">
-                    <div class="pure-g">
-                        <div class="pure-u-1"><a href="#" class="pure-menu-link">About</a></div>
-                        <div class="pure-u-1"><a href="#" class="pure-menu-link">Current Issues</a></div>
-                        <div class="pure-u-1"><a href="#" class="pure-menu-link">Donate</a></div>
-                        <div class="pure-u-1"><a href="#" class="pure-menu-link">Newsletter</a></div>
-                    </div>
-                </div>
-                <div class="pure-u-1 pure-u-md-3-5">
-                    <p>
-                        The Rock Canyon Preser­va­tion Alliance is a cit­i­zen group ded­i­cated to pre­serv­ing Rock Canyon, adja­cent to Provo, Utah, for present and future generations.
-                    </p>
-                    <p style="text-align: center;">
-                        <a href="#" class="button">Subscribe to the Newsletter</a>
-                        <span style="line-height: 2.5em;">or</span>
-                        <a href="#" class="button">Donate</a>
-                    </p>
-                </div>                    
-            </div>
-        </div>
-    </div>
-    <div class="pure-g footer">
-        <div class="pure-u-1 pure-u-md-1-2">
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2">
-            &copy; 2016 Rock Canyon Preservation Alliance
-        </div>
+---
+layout: default
+---
+<!-- About Rock Canyon -->
+<div class="pure-g">
+    <div class="pure-u-1">
+        <h1>About Rock Canyon</h1>
+    </div>                    
+</div>
+<div class="pure-g">
+    {% include menu.html %}
+    <div class="pure-u-1 pure-u-md-3-5">
+        <p>
+            Rock Canyon, adja­cent to Provo, Utah, draws thou­sands of peo­ple annu­ally who seek recre­ation, renewal, and inspi­ra­tion. It is one of the few remain­ing “URBAN FORESTS” in the United States which is eas­ily acces­si­ble and free for pub­lic use.
+        </p>
+        <p>
+            Vis­i­tors from all over the world are inspired by its MAJESTIC BEAUTY and UNIQUE GEOLOGICAL FEATURES.
+        </p>
+    </div>                    
+</div>
+<div class="pure-g">
+    <div class="pure-u-1">
+        <h1>What activ­i­ties do peo­ple enjoy in Rock Canyon?</h1>
     </div>
 </div>
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-2-5">
+        <div class="figure-frame">
+            <img src="images/hiking1.jpg" width="100%">
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-3-5">
+        <h2>Recreation</h2>
+        Hik­ing * Climb­ing * Moun­tain Bik­ing * Base Jump­ing * Pic­nick­ing * Snow-shoeing * Cross Coun­try Ski­ing * Sled­ding * Cou­ples’ Dates * Dog Walk­ing * Snow Board­ing * Horse­back Rid­ing * Rap­pelling * Ath­letic Train­ing * Spelunking
 
-    
-  </body>
-</html>
+        <h2>Education</h2>
+        Bird Watch­ing * Col­lege Field­trips in Geol­ogy, Art, Botany, Biol­ogy, Recre­ation Man­age­ment * Wilder­ness Train­ing Pro­grams * Insect Col­lect­ing * Study of Big Horn Sheep Pop­u­la­tions * Geo­log­i­cal Stud­ies * Wildlife Resource Man­age­ment Classes * Wild­flower Iden­ti­fi­ca­tion * Research Projects in the Nat­ural Sci­ences
+
+        <h2>Community</h2>
+        Fam­ily Walks * Preschool Out­ings * Ele­men­tary School Field Trips * Utah Native Plant Soci­ety Gar­den * Search &amp; Res­cue Train­ing
+    </div>                    
+</div>
+
+<!-- Directions -->
+<div class="pure-g" id="link-directions">
+    <div class="pure-u-1">
+        <h1>Directions to Rock Canyon</h1>
+    </div>                    
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1">
+        <div class="figure-frame">
+            <a href="https://www.google.com/maps/@40.264558,-111.6311801,344m/data=!3m1!1e3">
+                <img src="images/map-parking-lot.jpg" width="100%">
+            </a>
+        </div>
+        <div class="figure-label">Map 1: Trail Head Parking Lot</div>
+    </div>                    
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="figure-frame">
+            <a href="https://www.google.com/maps?f=d&source=embed&saddr=Exit+269&daddr=Rock+Canyon,+Provo,+UT&hl=en&geocode=FZGEZgIdQ1dX-Q;FTJuZgIdYn9Y-SmjxPq08pBNhzGQSZn3KDBA0Q&mra=dme&mrcr=0&mrsp=0&sz=14&sll=40.291966,-111.706839&sspn=0.062064,0.049696&ie=UTF8&dirflg=d&t=h&ll=40.268,-111.672935&spn=0.091688,0.145912&z=12">
+                <img src="images/map-sb-i15.jpg" width="100%">
+            </a>
+        </div>
+        <div class="figure-label">Map 2: Southbound on I-15 to Rock Canyon</div>
+    </div>                    
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="figure-frame">
+            <a href="https://www.google.com/maps/dir/40.206698,-111.657552/Rock+Canyon,+Provo,+UT/@40.2370656,-111.6794874,11001m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x874d90f2b4fac4a3:0xd1403028f7994990!2m2!1d-111.6407335!2d40.2673136?hl=en">
+                <img src="images/map-nb-i15.jpg" width="100%">
+            </a>
+        </div>
+        <div class="figure-label">Map 3: Northbound on I-15 to Rock Canyon</div>
+    </div>                    
+</div>
+
+<!-- Rock Canyon Preservation Alliance -->
+<div class="pure-g">
+    <div class="pure-u-1">
+        <h1>Rock Canyon<span class="tinybreak"> </span>Preservation Alliance</h1>
+    </div>                    
+</div>
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-2-5">
+        <div class="pure-g">
+            <div class="pure-u-1"><a href="#" class="pure-menu-link">About</a></div>
+            <div class="pure-u-1"><a href="#" class="pure-menu-link">Current Issues</a></div>
+            <div class="pure-u-1"><a href="#" class="pure-menu-link">Donate</a></div>
+            <div class="pure-u-1"><a href="#" class="pure-menu-link">Newsletter</a></div>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-3-5">
+        <p>
+            The Rock Canyon Preser­va­tion Alliance is a cit­i­zen group ded­i­cated to pre­serv­ing Rock Canyon, adja­cent to Provo, Utah, for present and future generations.
+        </p>
+        <p style="text-align: center;">
+            <a href="#" class="button">Subscribe to the Newsletter</a>
+            <span style="line-height: 2.5em;">or</span>
+            <a href="#" class="button">Donate</a>
+        </p>
+    </div>
+</div>
