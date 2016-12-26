@@ -1,8 +1,9 @@
 title: Rock Canyon Utah
 description: > # this means to ignore newlines until "baseurl:"
   Rock Canyon Preservation Alliance in Provo, Utah
-baseurl: ""
-url: "http://rockcanyonutah.com"
+baseurl: "/rockcanyonutah"
+# url: "http://rockcanyonutah.com"
+url: "https://canadaduane.github.io"
 
 gacode: "UA-85522875-1"
 

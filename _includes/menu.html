@@ -3,7 +3,7 @@
     <div class="pure-g">
 {% for link in site.navigation %}
         <div class="pure-u-1 {% if url == link.url %}pure-menu-selected{% endif %}">
-            <a href="{{link.url}}" class="pure-menu-link">
+            <a href="{{link.url | prepend: site.baseurl | prepend: site.url}}" class="pure-menu-link">
                 {{link.text}}
             </a>
         </div>
