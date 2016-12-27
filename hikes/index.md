@@ -7,7 +7,7 @@ layout: default
     {% include menu.html %}
     <div class="pure-u-1 pure-u-md-3-5">
         <p>
-            Check out the following three hikes. There are more on the way!
+            Check out the following hikes. There are more being added.
         </p>
     </div>
 </div>
